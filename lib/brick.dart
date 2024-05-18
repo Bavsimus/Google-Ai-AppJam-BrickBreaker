@@ -22,18 +22,6 @@ class Brick {
       child: Container(
         width: width,
         height: height,
-        decoration: BoxDecoration(
-          color: Colors.orange, // Kitap rengi
-          borderRadius: BorderRadius.circular(10), // Kenar yuvarlaklığı
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.3), // Gölge rengi
-              spreadRadius: 2,
-              blurRadius: 5,
-              offset: Offset(0, 3),
-            ),
-          ],
-        ),
         child: Stack(
           children: [
             Positioned(
@@ -42,10 +30,6 @@ class Brick {
               child: Container(
                 width: width - 20,
                 height: height - 20,
-                decoration: BoxDecoration(
-                  color: Colors.grey, // Sayfa rengi
-                  borderRadius: BorderRadius.circular(5), // Sayfa kenar yuvarlaklığı
-                ),
               ),
             ),
           ],
